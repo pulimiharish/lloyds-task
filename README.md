@@ -5,7 +5,7 @@ Using MovieDB API show the top movies
 https://developer.themoviedb.org/reference/intro/getting-started
 
 # Preview
-<img src="/art/preview.gif"/>
+<img src="/art/preview.gif" width="300"/>
 
 ## Usage
 - Clone this repository to your local machine
