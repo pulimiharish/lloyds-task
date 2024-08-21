@@ -1,0 +1,8 @@
+<resources>
+    <string name="activity_name">Movie DB</string>
+    <string name="star_rating">* %1$s *</string>
+    <string name="unable_to_load_movies_reason">Unable to load movies, reason: %1$s</string>
+    <string name="movie_screenshot">Movie screenshot</string>
+    <string name="play_video">Play trailer</string>
+    <string name="this_film_doesn_t_have_any_trailers">This film doesn\'t have any trailers</string>
+</resources>
