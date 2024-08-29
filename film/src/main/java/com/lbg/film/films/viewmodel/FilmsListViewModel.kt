@@ -25,7 +25,7 @@ class FilmsListViewModel @Inject constructor(
     // Pagination state
     private var currentPage = 1
     var isLoadingMore = false
-    private var allFilms: MutableList<Film> = mutableListOf()
+    private var allFilms: List<Film> = emptyList()
 
     init {
         getFilmsList(currentPage)
@@ -34,7 +34,6 @@ class FilmsListViewModel @Inject constructor(
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
     fun getFilmsList(page: Int = 1) {
          viewModelScope.launch {
-             _filmStateFlow.value = ViewState.Loading
             isLoadingMore = true
 
             filmsListUseCase(page).collect {
@@ -45,9 +44,9 @@ class FilmsListViewModel @Inject constructor(
                     }
 
                     is Result.Success -> {
-                        val filmsList = it.data
-                        allFilms.addAll(filmsList)
-                        _filmStateFlow.value = ViewState.Success(allFilms)
+                        val newList = allFilms + it.data
+                        _filmStateFlow.value = ViewState.Success(newList)
+                        allFilms = newList
                         currentPage++
                         isLoadingMore = false
                     }
