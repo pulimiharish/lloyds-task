@@ -78,4 +78,7 @@ dependencies {
     testImplementation(libs.mockk)
     testImplementation(libs.kotlinx.coroutines.test)
     androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(project(":film")) // If you are testing a functionality that needs the app module
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1") // Or latest version
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
 }

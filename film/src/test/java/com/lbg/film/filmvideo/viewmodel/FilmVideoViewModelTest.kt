@@ -1,10 +1,7 @@
 package com.lbg.film.filmvideo.viewmodel
 
-import com.lbg.film.mockFilm
 import com.lbg.domain.shared.Result
 import com.lbg.domain.usecase.FilmVideoUseCase
-import com.lbg.film.filmdetail.viewmodel.FilmDetailViewModel
-import com.lbg.film.filmdetail.viewmodel.FilmVideoViewModel
 import com.lbg.film.mockVideo
 import com.lbg.film.state.ViewState
 import io.mockk.clearAllMocks

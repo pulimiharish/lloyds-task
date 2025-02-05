@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.lbg.film.R
-import com.lbg.film.filmdetail.viewmodel.FilmVideoViewModel
+import com.lbg.film.filmvideo.viewmodel.FilmVideoViewModel
 import com.lbg.film.shared.ui.AppText
 import com.lbg.film.shared.ui.ErrorView
 import com.lbg.film.shared.ui.LoadingView

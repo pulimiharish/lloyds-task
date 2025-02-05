@@ -25,7 +25,7 @@ fun FilmsListScreen(
     selectedItem: (Long) -> Unit
 ) {
     val filmState = viewModel.filmStateFlow.collectAsState().value
-    val isLoadingMore = viewModel.isLoadingMore
+    val paginationState = viewModel.paginationState.collectAsState().value
     val gridState = rememberLazyGridState()
 
     when (filmState) {
@@ -43,7 +43,7 @@ fun FilmsListScreen(
                     FilmGridCardUI(film, selectedItem)
                 }
 
-                if (isLoadingMore) {
+                if (paginationState.isLoadingMore) {
                     item {
                         LoadingView()
                     }

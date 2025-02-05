@@ -1,8 +1,7 @@
-package com.lbg.film.filmdetail.viewmodel
+package com.lbg.film.filmvideo.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.lbg.domain.model.Film
 import com.lbg.domain.model.Video
 import com.lbg.domain.shared.Result
 import com.lbg.domain.usecase.FilmVideoUseCase

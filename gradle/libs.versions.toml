@@ -1,14 +1,15 @@
 [versions]
 # common versions across build.gradle.kts files
 accompanistNavigationAnimation = "0.31.3-beta"
-compileSdk = "34"
+compileSdk = "35"
 core = "11.1.0"
-targetSdk = "34"
-minSdk = "24"
+targetSdk = "35"
+minSdk = "28"
 kotlinCompilerExtensionVersion = "1.5.6"
+screenshot = "0.0.1-alpha07"
 
-agp = "8.3.2"
-kotlin = "1.9.21"
+agp = "8.7.2"
+kotlin = "2.0.0"
 coreKtx = "1.12.0"
 junit = "4.13.2"
 mockk = "1.13.8"
@@ -68,11 +69,15 @@ gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 gsonConverter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gsonConverter" }
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
 androidx-ui-test-junit4-android = { group = "androidx.compose.ui", name = "ui-test-junit4-android", version.ref = "uiTestJunit4Android" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+screenshot = { id = "com.android.compose.screenshot", version.ref = "screenshot"}
 
 
